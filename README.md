@@ -32,4 +32,4 @@ All the variables are as following:
 ```
 
 ## Thanks to
-Special thanks to **wcandillon** and its *swagger-js-codegen*, from which the idea was based.
+Special thanks to **wcandillon** and his *swagger-js-codegen*, from which the idea was based.
