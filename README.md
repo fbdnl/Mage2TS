@@ -4,7 +4,7 @@
 
 Mage2TS takes in the Swagger schema of a Magento 2 installation, cleans it up and generates a Typescript class with all the methods needed to interact with the REST endpoints.
 
-### Installation
+## Installation
 
 Simply run
 
@@ -14,7 +14,7 @@ npm install fabdan/mage2ts
 
 Into your project's folder.
 
-### Usage
+## Usage
 
 After the install, you can run it using the following command:
 
@@ -31,5 +31,5 @@ All the variables are as following:
 *store*: if you want to retrieve Swagger schema from a specific store (default to 'default')
 ```
 
-### Thanks to
+## Thanks to
 Special thanks to **wcandillon** and its *swagger-js-codegen*, from which the idea was based.
