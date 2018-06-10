@@ -25,10 +25,10 @@ mage2ts --host=http://192.168.1.1 --class=Magento --firebase=true --store=defaul
 All the variables are as following:
 
 ```
-*host*: the website/IP address of your Magento instance
-*class*: classname you want to use (default to 'Magento')
-*firebase*: if true, it will place the generated file into 'functions/src'; if false, it will place it into 'src'
-*store*: if you want to retrieve Swagger schema from a specific store (default to 'default')
+host: the website/IP address of your Magento instance
+class: classname you want to use (default to 'Magento')
+firebase: if true, it will place the generated file into 'functions/src'; if false, it will place it into 'src'
+store: if you want to retrieve Swagger schema from a specific store (default to 'default')
 ```
 
 ## Thanks to
