@@ -3,9 +3,9 @@ var Mage2TS = require('./lib/tools.js').Mage2TS;
 var commander = require('commander');
 
 commander
-    .version('0.1.2', '-v, --version')
+    .version('0.1.3', '-v, --version')
     .description('Converts Magento\'s Swagger schema into a Typescript class. Firebase ready.')
-    //.command('mage2ts')
+    .command('mage2ts')
     .arguments('<host>')
     .option('-s, --store <string>', 'the store code from which to gain the Swagger scheme (default to "default")')
     .option('-c, --class <string>', 'name of the generated Typescript class (default to "Magento")')
