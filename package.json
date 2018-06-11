@@ -1,7 +1,7 @@
 {
     "name": "mage2ts",
-    "version": "0.1.1",
-    "description": "Convert Magento's Swagger schema into Typescript class. Firebase ready.",
+    "version": "0.1.2",
+    "description": "Converts Magento's Swagger schema into a Typescript class. Firebase ready.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,9 +12,13 @@
     },
     "keywords": [
         "magento",
+        "magento 2",
         "swagger",
         "typescript",
-        "firebase"
+        "firebase",
+        "rest",
+        "api",
+        "cloud functions"
     ],
     "author": "Fabio Daniele",
     "license": "GPL-3.0",
@@ -26,8 +30,9 @@
         "mage2ts": "./index.js"
     },
     "dependencies": {
-        "swagger-js-codegen": "1.12.0",
+        "@types/superagent": "3.8.0",
+        "commander": "^2.15.1",
         "superagent": "3.8.3",
-        "@types/superagent": "3.8.0"
+        "swagger-js-codegen": "1.12.0"
     }
 }
