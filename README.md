@@ -3,6 +3,7 @@
 *Mapping Magento 2 APIs to Typescript. Firebase ready.*
 
 Mage2TS takes in the Swagger schema of a Magento 2 installation, cleans it up and generates a Typescript class with all the methods needed to interact with the REST endpoints.
+Generated class can be uploaded to Firebase in order to use it within *Cloud Functions*.
 
 ## Installation
 
@@ -19,17 +20,19 @@ Into your project's folder.
 After the install, you can run it using the following command:
 
 ```
-mage2ts --host=http://192.168.1.1 --class=Magento --firebase=true --store=default
+mage2ts <host> -c <class name> -s <store code>
 ```
 
-All the variables are as following:
+**Arguments**
 
-```
-host: the website/IP address of your Magento instance
-class: classname you want to use (default to 'Magento')
-firebase: if true, it will place the generated file into 'functions/src'; if false, it will place it into 'src'
-store: if you want to retrieve Swagger schema from a specific store (default to 'default')
-```
+- host: the base URL or IP address of your Magento instance
+
+**Options**
+
+- (-c | --class) name of the class that will be generated, default to 'Magento'
+- (-s | --store) if you want to retrieve Swagger schema from a specific store, default to 'default'
+- (-f | --firebase) if added, it will place the generated file into 'functions/src', default to 'src'
+- (-t | --test) if added, it will parse Swagger schema without generating the Typescript class
 
 ## Thanks to
-Special thanks to **wcandillon** and his *swagger-js-codegen*, from which the idea was based.
+Special thanks to **wcandillon** and his [*swagger-js-codegen*](https://github.com/wcandillon/swagger-js-codegen), from which the idea was based.
