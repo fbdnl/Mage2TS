@@ -10,7 +10,7 @@ Generated class can be uploaded to Firebase in order to use it within *Cloud Fun
 Simply run
 
 ```
-npm install fabdan/mage2ts
+npm install mage2ts
 ```
 
 Into your project's folder.
